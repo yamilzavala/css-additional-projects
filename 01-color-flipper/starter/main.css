@@ -257,3 +257,95 @@ ul {
 Nav
 ===============
 */
+nav {
+  background: var(--white);
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-2);
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  max-width: var(--fixed-width);
+} 
+
+.nav-center h4 {
+  margin-bottom: 0;
+  color: var(--primary-500);
+  letter-spacing: var(--letterSpacing);
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 0 1rem;
+}
+
+nav a {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: var(--primary-900);
+  letter-spacing: var(--letterSpacing);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--primary-500);
+}
+
+/*
+=============== 
+Container
+===============
+*/
+main {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+  max-width: var(--max-width);
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+.container h2{
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  letter-spacing: 5px;
+  border-bottom: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.color {
+  color: var(--primary-500);
+  font-weight: 600;  
+  text-transform: uppercase;
+}
+
+.btn-hero {
+  border: solid 2px var(--black);
+  padding: 0.75rem 1.25rem;
+  transition: var(--transition);
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.btn-hero:hover {  
+  color: var(--white);
+  background-color: var(--black);
+}
+
