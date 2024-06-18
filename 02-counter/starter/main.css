@@ -259,3 +259,51 @@ ul {
 Counter
 ===============
 */
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1{
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 4rem;
+}
+ #value {
+  font-size:7rem;
+  font-weight: bold;
+  line-height: 1.25;
+ }
+
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.counter-btn {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: var(--textColor);
+  border: solid 2px var(--black);
+  margin: 0.5rem;
+}
+
+.counter-btn:hover {
+  background-color: var(--textColor);
+  color: var(--white);
+}
+
+@media screen and (max-width: 420px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
