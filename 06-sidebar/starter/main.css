@@ -257,3 +257,32 @@ ul {
 Sidebar
 ===============
 */
+
+.sidebar-toggle {
+  position: fixed;
+  right: 3rem;
+  top: 2rem;
+  border-color: transparent;
+  background: transparent;
+  font-size: 2rem;
+  color: var(--primary-300);
+  transition: var(--transition);
+  cursor: pointer;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.sidebar-toggle:hover {
+  color: var(--primary-500);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.5)
+  }
+  100% {
+    transform: scale(1)
+  }
+}
